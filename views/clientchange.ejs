@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/assets/hovedcss.css" rel="stylesheet" type="text/css" />
+    <title>Reservation Database</title>
+</head>
+<body>
+    
+    <section>
+       <form action="/book" method="POST">
+            <div class="loginbox">
+                <br>
+                <br>
+                <br>
+                <span class="text-center lato ls-small">Book a Reservation to <%- destination %></span>
+                <div class="input-container">		
+                    <input class="lato ls-xsmall" type="text" id="destination" name="destination" value="<%- destination %>" required/>
+                    <label class="lato ls-xsmall">Destination</label>
+                </div>
+                <div class="input-container">		
+                    <input class="lato ls-xsmall" type="text" id="name" name="name" required/>
+                    <label class="lato ls-xsmall">Name</label>
+                </div>
+                <div class="input-container">		
+                    <input class="lato ls-xsmall" type="email" id="email" name="email" required/>
+                    <label class="lato ls-xsmall">E-mail</label>
+                </div>
+                <div class="input-container">		
+                    <input class="lato ls-xsmall" type="password" id="password" name="password" required/>
+                    <label class="lato ls-xsmall">Password</label>
+                </div>
+                <div>
+                    <label class="lato ls-xsmall white" style="font-size: 16px;">Package</label><br><br>
+                    <input type="radio" id="bronze" name="package" value="bronze">
+                    <label class="lato ls-xsmall white" for="bronze">Bronze</label>
+                    <input type="radio" id="silver" name="package" value="silver">
+                    <label class="lato ls-xsmall white" for="silver">Silver</label>
+                    <input type="radio" id="gold" name="package" value="gold">
+                    <label class="lato ls-xsmall white" for="gold">Gold</label>
+                </div>
+                <br>
+                <br>
+                <button class="medium uppercase ls-medium lato" type="submit">Book!</button>
+    
+            </div>
+        </form>
+    </section>
+    <script>
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/assets/hovedcss.css" rel="stylesheet" type="text/css" />
+    <title>Reservation Database</title>
+</head>
+<body>
+    
+    <section>
+            <div class="loginbox">
+                <br>
+                <br>
+                <br>
+                <span class="text-center lato ls-small">Welcome, <%- name %></span>
+                <h1 class="lato medium ls-small">You have a reservation to <%- destination %></h1>
+                <h2 class="lato medium ls-small">Reservation Details:</h2>
+                <h3 class="lato medium ls-small">Confirmation Number:</h3><p class="lato medium white ls-xsmall"><%- id %></p>
+                <h3 class="lato medium ls-small">Destination:</h3><p class="lato medium white ls-xsmall"><%- destination %></p>
+                <h3 class="lato medium ls-small">Name on reservation:</h3><p class="lato medium white ls-xsmall"><%- name %></p>
+                <h3 class="lato medium ls-small">Package choosen:</h3><p class="lato medium white ls-xsmall"><%- package %></p>
+                <br>
+                <br>
+                <button class="medium uppercase ls-medium lato" onclick="window.location.href='/clientchange'" >Change/Cancel your reservation</button>
+                <br>
+                <br>
+                <form action="/logout?_method=DELETE" method="POST">
+                    <button class="medium uppercase ls-medium lato" type="submit" >Log-out</button>
+                </form>
+            </div>
+    </section>
+
+    <script>
+        async function decrypt(variable){
+            const dcript= await bcrypt.compare(variable)
+            return dcript
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>

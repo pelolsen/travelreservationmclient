@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/assets/hovedcss.css" rel="stylesheet" type="text/css" />
+    <title>Reservation Database</title>
+</head>
+<body>
+    <a href="/menu">Menu</a>
+    <section>
+        <form action="/singlereservation" method="POST">
+            <div class="loginbox">
+                <br>
+                <br>
+                <br>
+                <span class="text-center lato ls-small">Find a Reservation</span>
+                <div class="input-container">		
+                    <input class="lato ls-xsmall" type="text" id="id" name="id" required/>
+                    <label class="lato ls-xsmall">Reservation ID</label>
+                </div>
+                <br>
+                <button class="medium uppercase ls-medium lato" type="submit">Find</button>
+                <br>
+                <br>
+                <div>
+                    <span class="lato ls-small" style="color:#fff; text-transform:uppercase; font-size: 23px; margin: -50px 0 80px 0; text-align: center;">Reservation: </span>
+                    <p class="lato ls-xsmall white"><%- reservation %></p>
+                </div>
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/assets/hovedcss.css" rel="stylesheet" type="text/css" />
+    <title>Reservation Database</title>
+</head>
+<body>
+    <a href="/menu">Menu</a>
+    <section>
+       <form action="/registeruser" method="POST">
+            <div class="loginbox">
+                <br>
+                <br>
+                <br>
+                <span class="text-center lato ls-small">Register a Reservation</span>
+                <div class="input-container">		
+                    <input class="lato ls-xsmall" type="text" id="name" name="name" required/>
+                    <label class="lato ls-xsmall">Name</label>
+                </div>
+                <div class="input-container">		
+                    <input class="lato ls-xsmall" type="email" id="email" name="email" required/>
+                    <label class="lato ls-xsmall">E-mail</label>
+                </div>
+                <div class="input-container">		
+                    <input class="lato ls-xsmall" type="password" id="password" name="password" required/>
+                    <label class="lato ls-xsmall">Password</label>
+                </div>
+                <br>
+                <br>
+                <button class="medium uppercase ls-medium lato" type="submit">Register</button>
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>

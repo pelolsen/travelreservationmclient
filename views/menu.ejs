@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/assets/hovedcss.css" rel="stylesheet" type="text/css" />
+    <title>Menu</title>
+</head>
+<body>
+    <section>
+        <div class="menubox">
+            <h1 class="gamma thin uppercase ls-xlarge lato">Menu</h1>
+            <br>
+            <br>
+            <button class="medium uppercase ls-medium lato" onclick="window.location.href='/register'">Add a Reservation</button>
+            <br>
+            <br>
+            <button class="medium uppercase ls-medium lato" onclick="window.location.href='/allreservations'">All Reservations</button>
+            <br>
+            <br>
+            <button class="medium uppercase ls-medium lato" onclick="window.location.href='/singlereservation'">Single Reservation</button>
+            <br>
+            <br>
+            <form action="/menu" method="POST">
+                <button class="medium uppercase ls-medium lato" type="submit">Add precoded reservations</button>
+            </form>
+            <br>
+            <br>
+            <form action="/logout?_method=DELETE" method="POST">
+                <button class="medium uppercase ls-medium lato" type="submit">Log Out</button>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>

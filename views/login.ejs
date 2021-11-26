@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/assets/hovedcss.css" rel="stylesheet" type="text/css" />
+    <title>Log In</title>
+</head>
+<body>
+    <a href="/registeruser">Register yourself here</a>
+    <section>
+        <div class="loginbox">
+            <span class="text-center lato ls-small">Login</span>
+            <!-- FLASH MESSAGE -->
+            <% if (messages.error) { %>
+                <%= messages.error %>
+            <% } %>
+            <form action="/login" method="POST">
+                <div class="input-container">		
+                    <input class="lato ls-xsmall" type="email" name="email" id="email" required/>
+                    <label class="lato ls-xsmall">E-mail</label>
+                </div>
+                <div class="input-container">		
+                    <input class="lato ls-xsmall" type="password" name="password" id="password" required/>
+                    <label class="lato ls-xsmall">Password</label>
+                </div>
+                <br>
+                <br>
+                <button class="medium uppercase ls-medium lato" type="submit">Log In</button>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
